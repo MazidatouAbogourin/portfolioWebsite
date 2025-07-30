@@ -114,10 +114,10 @@ transition: all 0.3 ease-in-out;
     transform: none;
 }
 section{
-    padding-top: 4vh;
+    padding-top: 5vh;
     height: 100vh;
     margin: 0  10rem;
-    margin-top: 150px;
+    
     box-sizing: border-box;
     min-height: fit-content;
 }
