@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo"> MA </div>
+            <div>
+                <ul class="nav-links">
+                <li><a href="#About">About</a></li>
+                <li > <a href="#Experience">Experience</a> </li>
+                <li><a href="#Project">Projects</a> </li>
+                <li><a href="#Contact"> Contact</a> </li>
+            </ul>
+
+            </div>
+            
+        </nav>
+        <nav class="hamburger-nav">
+             <div class="logo"> MA </div>
+             <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenue()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#About" onclick="toggleMenue()">About</a></li>
+                <li > <a href="#Experience" onclick="toggleMenue()">Experience</a> </li>
+                <li><a href="#Project" onclick="toggleMenue()">Projects</a> </li>
+                <li><a href="#Contact" onclick="toggleMenue()"> Contact</a> </li>
+
+                </div>
+             </div>
+
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+           
+            <div class="section__text">
+                <p class="section__text__p1">Hey There 👋 ! I'm  </p>
+                <h1 class="title">Mazidatou Abogourin</h1>
+                <p class="section__text__p2">Full Stack Developer</p>
+
+               <div class="btn-container">
+                 <button class="btn btn-color-2" 
+                 onclick="window.open('./assets/resume.pdf')"> View my CV</button>
+                <button class="btn btn-color-1" 
+                 onclick="location.href='#Contact'">Contact Me</button> </div> 
+                    
+                
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="My linkedin" 
+                    class="icon" onclick="window.location.href='https://www.linkedin.com/in/mazidatou-abogourin-08a189185/'">
+
+                    <img src="./assets/github.png" alt="My github profile" class="icon" onclick="window.location.href='https://github.com/MazidatouAbogourin'">
+                </div>
+            </div>
+
+             <div class="section__pic-container">
+                <img src="./assets/profile.jpg" alt="Mazidatou" class="round-image">
+
+            </div>
+
+        </section>
+
+        <section id="About" >
+            <p class="section__text__p1"> Get To know me</p>
+            <h1 class="title"> About Me</h1>
+            <div class="content">
+                <div id="card">
+                     <h2> <img src="./assets/experience.png" alt="" class="icon"> 7+ </h2>
+                    <h4 style="margin:5px ;"> Full-Stack developer </h4>
+                    <p style="margin:20px ; text-align: center; color: grey; max-width: 100ch;">Hi, I'm Mazidatou Abogourin, a Full Stack Developer with over 7 years of experience building scalable web applications and backend systems. I specialize in Angular, NestJS, Spring Boot, MongoDB, and SQL, with a focus on clean architecture and cloud deployment using AWS and Docker.
+
+I have worked across industries like logistics, e-commerce, and telecommunications, and I'm passionate about solving problems and learning new technologies every day.</p>
+
+<div class="highlight-grid">
+    <div class="highlight-item problem-solver">
+      <h3>💡 Problem Solver</h3>
+      <p>I love turning complex requirements into clean, functional solutions. Whether it's optimizing performance or debugging critical systems, I enjoy solving tough challenges with elegant code.</p>
+    </div>
+    <div class="highlight-item product-focused">
+      <h3>🧱 Product-Focused</h3>
+      <p>I think beyond code. I care deeply about building user-centric products that are reliable, scalable, and actually solve real-world problems.</p>
+    </div>
+    <div class="highlight-item always-learning">
+      <h3>🔄 Always Learning</h3>
+      <p>Tech moves fast — and I move with it. I'm constantly exploring new tools, frameworks, and best practices to stay sharp and improve my craft.</p>
+    </div>
+  </div>
+                </div>
+
+            </div>
+
+                
+               
+          
+
+        </section>
+
+        <section id="skills" >
+
+             <div id="card-info">
+               <h1 class="title"> Skills</h1>
+                         
+                    <div id="card_skills">
+                           
+                           <div class="item">
+                            <h3 >Languages And Frameworks</h3>
+                              <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"> <span>Angular</span></span>
+                              <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"> <span>Javascript</span></span>
+                              <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"><span>TypeScript</span></span>
+                              <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"><span>HTML5</span></span>
+                              <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"><span>CSS3</span></span>
+                              <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"> <span>Java</span></span>
+                              <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"> <span>Spring Boot</span></span>
+                             <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"><span>NestJS</span></span>
+
+                           </div>
+                           <div class="item">
+                          
+                            <h3 >Databases</h3>
+                             
+                             <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"><span>MySql</span></span>
+                            <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"><span>MongoDB</span></span>
+                            <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"> <span>Mongoose</span></span>
+                             <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"><span>Reddis</span></span>
+                           </div>
+
+                           <div class="item">
+                          
+                            <h3 >Cloud and Devops</h3>
+                             <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"> <span>AWS S3</span></span>
+                             <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"><span>Docker Compose</span></span>
+                             <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"><span>GitHub Actions</span></span>
+                            <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"><span>MongoDB</span></span>
+                           </div>
+                           <div class="item">
+                          
+                            <h3 >Testing Framework</h3>
+                             <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"> <span>Jasmine</span></span>
+                             <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"><span>Karma</span></span>
+                             <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"><span>Chrome Dev Tools</span></span>
+                            <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"><span>Lighthouse</span></span>
+                           </div>
+
+                            <div class="item">
+                          
+                            <h3 >Tools and Project Management</h3>
+                             <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"> <span>Visual studio code</span></span>
+                             <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"><span>PostMan</span></span>
+                             <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"><span>Agile Scrum</span></span>
+                            <span class="skillset"> <img src="./assets/checkmark.png" alt="" class="icon"><span>JIRA</span></span>
+                           </div>
+                           
+
+                    </div>
+
+                    <div id="education">
+                        <h3> <img src="./assets/education.png" alt="" class="icon"> Education</h3>
+                        <p><strong>B.Sc. in Computer Science</strong><br>East-West University</p>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+        <section id="Project" >
+            <p class="section__text__p1"> Project I've worked on</p> 
+            <h1 class="title"> Projects</h1>
+            
+            <div class="project_continer">
+                <div class="project_item" id="tran_dash">
+                    <h3>Transportation Management Dashboard Platform</h3>
+                    <div class="project_container">
+                         <p>The Transportation Management Dashboard (TMD) is a centralized web application  that enables businesses to monitor, manage, and optimize their vehicle fleet in real time. This web application makes     it easier for users to track shipments, view live updates, 
+                        and access detailed information  about dispatchers and delivery status.</p>
+                        <div class="skills_used">
+                            <span class="skill_used">Angular14+</span>
+                            <span class="skill_used">Spring Boot</span>
+                            <span class="skill_used">MongoDB</span>
+                            <span class="skill_used">Reactive Forms</span>
+                            <span class="skill_used">Custom Validators</span>
+                            <span class="skill_used">Redis</span>
+                            <span class="skill_used">Rxjs</span>
+
+                        </div>
+
+                    </div>
+                   
+                
+                </div>
+                <div class="project_item" id="bill_dash">
+                    <h3>  Bill Payment Platform </h3>
+                     <div class="project_container">
+                         <p>Bill payment is a core feature of the platform I developed using Angular, enabling seamless utility bill transactions through MTN MoMo, with a strong focus on user-friendly design.</p>
+                      <div class="skills_used">
+                            <span class="skill_used">Angular10+</span>
+                            <span class="skill_used">Lazy load/Routing</span>
+                            <span class="skill_used">Route guards</span>
+                            <span class="skill_used">Reactive Forms</span>
+                            <span class="skill_used">HTTPClient</span>
+                            <span class="skill_used">Rxjs</span>
+
+                        </div>
+
+                     </div>
+                   
+                </div>
+                <div class="project_item" id="client_dash"> <h3>Client Support Dashboard</h3>
+                     <div class="project_container" >
+                           <p>The Client Support Dashboard is an internal web application developed for Nalo Solutions Limited employees to efficiently monitor transactions, manage support tickets, and respond to client issues. The application centralizes support operations, enhancing response time and service reliability.
+</p>    
+                  <div class="skills_used">
+                            <span class="skill_used">Angular7</span>
+                            <span class="skill_used">MongoDB</span>
+                            <span class="skill_used">Angular Material</span>
+                            <span class="skill_used"> Reactive forms</span>
+                            <span class="skill_used">Rxjs</span>
+                             <span class="skill_used">Dependency injection</span>
+                            
+
+                        </div> 
+
+                     </div>
+                          
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="Contact">
+            <div class="contact_container">
+                <h2>Get In Touch</h2><br>
+        
+            <ul>
+                <li><img src="./assets/email.png" alt="" class="icon">   <a href="mailto=" class="contact_link">mazidatouabg@gmail.com</a></li>
+                
+                <li> <img src="./assets/linkedin.png" alt="" class="icon"> <a href="https://www.linkedin.com/in/mazidatou-abogourin-08a189185/"  class="contact_link">linkedin Profile</a> </li>
+                <li><img src="./assets/github.png" alt="" class="icon"> <a href="https://github.com/MazidatouAbogourin"  class="contact_link">GitHub Profile</a></li>
+            </ul>
+
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        mazidatouAbogourin&copy; 2025. All rights reserved
+
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
